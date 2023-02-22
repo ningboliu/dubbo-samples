@@ -44,6 +44,7 @@ public class GenericTask implements CommandLineRunner {
         ReferenceConfig<GenericService> reference = new ReferenceConfig<>();
         reference.setInterface(interfaceClass);
         reference.setVersion(version);
+        //开启泛化调用
         reference.setGeneric("true");
         reference.setTimeout(30000);
         reference.setGroup(group);
